@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('font/two.woff2') format('woff2'), url('font/one.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'CustomFonto';
+            src: url('fonto/two.woff2') format('woff2'), url('fonto/one.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Custom';
+            src: url('font/Klein-Condensed-ExtraBold-Italic-trial.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'CustomF';
+            src: url('font/Klein-Text-Book-trial.woff2') format('woff2');
+        }
+
+        body {
+            font-family: 'Poppins';
+            margin: 0;
+            padding: 0;
+            color: rgb(24, 23, 23);
+        }
+
+        #b-russ {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        #b-russ:hover {
+            transform: scale(1.1);
+            opacity: 0.3;
+        }
+
+        dd {
+            display: list-item;
+            list-style-type: "";
+            padding-inline-start: 1ch;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            margin-right: 20px;
+            color: black;
+        }
+
+        .banner {
+            height: 300px;
+            background: url('img/tree.jpeg') center/cover;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-content {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+
+        .content p {
+            font-size: 20px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        .personal-info {
+            display: flex;
+            flex-direction: column;
+            width: 63%;
+            margin-right: 20px;
+        }
+
+        .personal-info .summary {
+            width: 100%;
+        }
+
+        .personal-info p {
+            font-size: 18px;
+        }
+
+        .hobbies-quotes {
+            display: flex;
+            flex-direction: column;
+            width: 37%;
+        }
+
+        .hobbies-quotes p {
+            font-size: 20px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .personal-info,
+            .hobbies-quotes {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container header">
+        <div>
+            <a href="#" style="text-decoration:none;color: rgb(71, 68, 68);font-family:Custom;font-size:35px;font-weight:bold;font-style: italic;">BRAUM &nbspRUSSELL</a>
+        </div>
+        <div class="menu-items">
+            <a href="index.html">ABOUT ME</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="experiences.html">EXPERIENCES</a>
+            <a href="contact.html">CONTACT ME!</a>
+        </div>
+    </div>
+
+    <div class="container banner">
+        <div class="banner-content" id="b-russ">
+            <span style="color:rgba(0, 0, 0, 0.764);font-weight: 900; font-size: 30px; font-style: italic;"><br>WELCOME  <br /></span> <span style="color:black;font-size:20px;font-weight:900;font-style:italic;">Hi! I'm</span> <span style="color: rgba(5, 98, 5, 0.905); font-size: 20px; font-weight: 900; font-style: italic;"> Braum &#128075</span>
+        </div>
+    </div>
+
+    <div class="container content">
+        <div class="personal-info">
+            <p style="font-size:26px;font-family: CustomF;font-weight:500;">WHO IS BRAUM?</p>
+            <p>
+                Born in Indianapolis, Indiana, and raised in the Dallas- Fort Worth Metroplex, I am a current senior at the University of Oklahoma. Actively involved in university opportunities, such as the National Society of Black Engineers and the Dr. George Henderson’s Scholars, I have had the privilege of witnessing and contributing to achievements in both academic and community aspects.
+                <br><br>
+                Drawing inspiration from my family background, I’ve gained from my mother's expertise in HR strong interpersonal skills, like networking and effective collaboration with different personalities. In contrast, my father, with a background in engineering and a current role as a Cyber Security VP, has instilled in me a logical and structured approach to problem-solving and decision-making.
+                <br><br>
+                Regarding my family as a whole, we are very large and diverse group, each with our own unique traits and characteristics! This has not only shaped how I learned collaboration, but also instilled in me the value of viewing situations from different perspectives.
+                <br><br>
+                Currently residing in Norman, Oklahoma, I manage balancing my academic commitments and student life, pursuing two degrees that aligns with my passion for technology and business. Approaching the next chapter of my journey, I am excited to contribute my skills and thrive in environments where teamwork, creativity, and a mix of perspectives are celebrated. I look forward to contributing a unique and collaborative spirit to the team I join!
+            </p>
+        </div>
+        <div class="hobbies-quotes">
+            <p style="font-size:26px;font-family: CustomF;font-weight:500;">Personal Life</p>
+            <dl style="font-size:20px;font-family: Chivo;">
+                <dt style="font-size:22px;font-family:CustomF;font-weight:bolder;">Hobbies</dt>
+                <dd>🏋️‍♂️Fitness Enthusiast/Weight Lifter</dd>
+                <dd>📷Photography</dd>
+                <dd>🎧Music (whether it is mixing it or listening!)</dd>
+                <dd>🏃‍♂️Occasional Running</dd>
+                <dd>🗺️Exploring New Cities</dd>
+            </dl>
+            <p style="font-size:22px;font-family:CustomF;font-weight:bolder;">Quotes</p>
+            <p style="font-style:italic;">"Murphy’s law doesn’t mean that something bad will happen. It means that whatever can happen will happen." - Christopher Nolan</p>
+            <p style="font-style:italic;">"Some people want it to happen, some wish it would happen, others make it happen." - Michael Jordan"</p>
+            <p style="font-style:italic;">"Ride the wave, let it pass; Dont cling, be detatched" - Kevin Russell</p>
+            <p style="font-style:italic;">"Simplicity is the ultimate sophistication" - Leonardo da Vinci</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
